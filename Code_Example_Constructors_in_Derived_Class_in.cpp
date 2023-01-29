@@ -96,8 +96,9 @@ public:
 int main()
 {
     Derived suhas(1,3,4,5,6);
+    suhas.printBase3();
+
     suhas.printBase1();
     suhas.printBase2();
-    suhas.printBase3();
     suhas.printDerived();
 };
