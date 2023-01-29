@@ -19,7 +19,14 @@
             
             * Derived-Constructor(arg1, arg2, arg3,.......):Base-Constructor(arg3, arg4){
                 ......
-            }Base-Constructor(arg1, arg2)
+            }Base-Constructor(arg1, arg2);    
+    
+    * special case of virtual base class
+    * ===> 
+            * The constructor for virtual base class are invoked before an nonvirtual base class.
+            * If there are multiple virtual base classes, they are invoked in the order declared.
+            * Any non-virtual base class are then constructed before the derived class constructor is executed.
+                  
 
 */
 
