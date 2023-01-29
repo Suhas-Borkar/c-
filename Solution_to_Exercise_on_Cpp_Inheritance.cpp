@@ -8,7 +8,7 @@ protected:
     int a, b;
 
 public:
-    void getdatasimple()
+    void getdata()
     {
         cout << "Enter the value of a " << endl;
         cin >> a;
@@ -32,11 +32,11 @@ protected:
     int a, b;
 
 public:
-    void getdatascientific()
+    void getdata()
     {
-        cout << "Enter the scientific value of a " << endl;
+        cout << "Enter the value of a " << endl;
         cin >> a;
-        cout << "Enter the scientific value of b " << endl;
+        cout << "Enter the value of b " << endl;
         cin >> b;
     };
 
@@ -54,7 +54,11 @@ public:
 };
 
 class hybridCalculator : public scientificCalculation , public simplecalculator{
-
+    public:
+    void getdata(){
+//        scientificCalculation :: getdata();   ==> dumb value given
+        simplecalculator :: getdata();
+    }
 };
 
 int main(){
@@ -67,8 +71,7 @@ int main(){
     // ni.performsOperation();
 
     hybridCalculator su;
-    su.getdatasimple();
-    su.getdatascientific();
+    su.getdata();
     su.performOperation();
     su.performsOperation();
 }
