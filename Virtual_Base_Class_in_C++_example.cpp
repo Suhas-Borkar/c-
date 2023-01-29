@@ -44,7 +44,7 @@ class sport : virtual public student{
 
 };
 
-class result : virtual public test ,virtual public sport{
+class result :  public test , public sport{
     private:
     float total; 
     public:
