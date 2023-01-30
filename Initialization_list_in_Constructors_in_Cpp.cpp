@@ -1,6 +1,13 @@
 #include <iostream>
 using namespace std;
 
+/*
+    syntax for intialization list in constructor:
+    constructor (argument-list) : initilization-section{
+        assignment+other code ; 
+    }
+*/  
+
 class test{
     int a; // here the a is initialized first 
     int b; // here the b is initialized second
