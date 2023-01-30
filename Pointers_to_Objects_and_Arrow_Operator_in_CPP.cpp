@@ -42,13 +42,18 @@ int main()
     // ptr->setdata(42,40); 
     // ptr->getdata();
 
-    complex *ptr = new complex[3]; // using array of object 
-    ptr->setdata(52,50);
-    ptr->getdata();
+    // complex * ptr = new complex[3]; // using array of object 
+    // ptr->setdata(52,50);
+    // ptr->getdata();
 
-    (ptr+1)->setdata(62,60);
-    (ptr+1)->getdata();
+    // (ptr+1)->setdata(62,60);
+    // (ptr+1)->getdata();
 
-    (ptr+2)->setdata(72,70);
-    (ptr+2)->getdata();
+    // (ptr+2)->setdata(72,70);
+    // (ptr+2)->getdata();
+
+
+    complex * complex_pointer = new complex;
+    complex_pointer->setdata(12,12);
+    complex_pointer->getdata();
 };
