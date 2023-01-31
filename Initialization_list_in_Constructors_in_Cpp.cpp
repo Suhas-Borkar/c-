@@ -13,6 +13,11 @@ class test{
     int b; // here the b is initialized second
     public:
     // test(int x, int y): a(x),b(y)
+    // {
+    //      cout<<"Counstructor executed"<<endl;
+    //     cout<<"The value of a is "<<a<<endl;
+    //     cout<<" value of b is "<<b<<endl;   
+    // }
     // test(int x, int y): a(x),b(y+x)
     // test(int x, int y): a(x+y),b(y)
     // test(int x, int y): a(x),b(y+a)

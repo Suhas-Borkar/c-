@@ -6,7 +6,7 @@ class complex
     int a, b;
 
 public:
-    complex(int, int);// constructor declaration 
+    complex(int, int); // constructor declaration
 
     void pricom(void)
     {
@@ -25,9 +25,9 @@ int main()
     // implicit call
     complex c(1, 2);
 
-    // explicit call 
+    // explicit call
     complex b = complex(3, 4);
-    complex a=  complex(5, 6);
+    complex a = complex(5, 6);
     c.pricom();
     b.pricom();
     a.pricom();

@@ -22,7 +22,7 @@ complex ::complex(void)
 {
     a = 10;
     b = 10;
-    // cout<<"Hello World"<<endl;
+    cout<<"Hello World"<<endl;
 };
 
 int main()
