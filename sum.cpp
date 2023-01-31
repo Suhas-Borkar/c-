@@ -30,6 +30,6 @@ int main()
     sum1(global,global11); //ya thikani value pass keli keli ahe  
 
     
-    cout<<"global : "<<global;
-    cout<<" global : "<<global11;
+    cout<<"global : "<<::global;
+    cout<<" global : "<<::global11;
 }
