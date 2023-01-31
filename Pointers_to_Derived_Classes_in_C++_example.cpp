@@ -23,17 +23,18 @@ class nilesh : public suhas{
 int main(){
 
     suhas * suhas_class;  
-    // suhas suhas_obj;
-    // nilesh nilesh_obj; // this is a base class then derived class int does't call here
-    // suhas_class = &nilesh_obj; 
+    suhas suhas_obj;
+    nilesh nilesh_obj; 
+    suhas_class = &nilesh_obj; 
     
     suhas_class->num1 = 10;
-    // suhas_class->num2 = 20;
+    // suhas_class->num2 = 20;  // this is a base class then derived class int does't call here
     suhas_class->display();
 
 
-
-
-
+    nilesh * nilesh_class;
+    nilesh_class->num1=20;
+    nilesh_class->num2=40;
+    nilesh_class->display();
     return 0;
 }

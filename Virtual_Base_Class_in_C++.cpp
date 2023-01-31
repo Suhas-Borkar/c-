@@ -11,7 +11,12 @@ class B : public virtual A {
 };   
 class C : public virtual A { 
 };   
-class D : public B, public C { 
+class D : public B, public C {
+    public:
+    void say(){
+        A::say();
+        cout<<"Good Morning "<<endl;
+    } 
 };
 
 int main(){
