@@ -13,12 +13,21 @@ using namespace std;
 
 int main()
 {
-    string st = "Hello Akshay sir,";
-    string st1 = " J1 zal ka";
+    // string st = "Hello sir,";
+    // string st0 = "what are you doing.";
+    string st1;
+    // string st1 = " J1 zal ka";
 
-    // opening files using construction 
-    ofstream out("simple60.txt");
-    out<<st;
-    out<<st1;
+    // opening files using construction and writting it
+    // ofstream out("simple60.txt"); // write operator
+    // out<<st;
+    // out<<st0;
+
+    // opening files using construction and reading it
+
+    ifstream in("simple60.txt");
+    // in>>st1;
+    getline(in,st1);
+    cout<<st1;
     return 0;
 }
