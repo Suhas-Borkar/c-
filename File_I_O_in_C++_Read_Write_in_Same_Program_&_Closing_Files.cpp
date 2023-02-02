@@ -27,7 +27,15 @@ int main(){
     cout<<"Enter your name "; 
     string name;    // create string
     cin>>name;  // 
-    hout<<"My name is "+ name;  // string insert in file 
+    hout<<"My name is "+ name;  //   writing a string into the file 
+     
+    hout.close(); // connection end
 
+    ifstream hdata("sample61.txt"); //reconnecting to 'sample61.txt' this file 
+    string data; //creating string for store data from sample61.txt this file
+    // hdata>>data; // store data in string
+    getline(hdata,data);
+    cout<<"The content of this file is "<<data<<endl; // store data print 
+    hdata.close();
 
 }

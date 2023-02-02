@@ -5,7 +5,8 @@
         "thread": "cpp",
         "complex": "cpp",
         "string": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "random": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }
